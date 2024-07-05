@@ -1,0 +1,26 @@
+body {
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+button {
+	width: fit-content;
+	margin-top: 10px;
+}
+
+.homework-bock {
+	margin-bottom: 50px;
+}
+
+.task-block {
+	padding: 20px 20px 0 12px;
+}
+
+.task-block__about {
+	text-align: justify;
+	padding: 0;
+	margin: 10px 0 0;
+}
