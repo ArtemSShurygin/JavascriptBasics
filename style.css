@@ -11,12 +11,19 @@ button {
 	margin-top: 10px;
 }
 
+.title {
+	text-align: center;
+}
+
 .homework-bock {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
+}
+.homework-bock__summary {
+	text-align: center;
 }
 
 .task-block {
-	padding: 20px 20px 0 12px;
+	padding: 25px 20px 0 12px;
 }
 
 .task-block__about {

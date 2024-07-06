@@ -7,11 +7,11 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<h1>Основы Javascript</h1>
-		<details class="homework-bock" open>
-			<summary>Домашнее задание 1.</summary>
+		<h1 class="title">Основы Javascript</h1>
+		<details class="homework-bock">
+			<summary class="homework-bock__summary">Домашнее задание 1. Знакомство с JavaScript.</summary>
 			<div class="task-block">
-				<details>
+				<details open>
 					<summary>Задание 1</summary>
 					<p class="task-block__about">
 						Необходимо создать переменную в которой будет храниться температура в градусах Цельсия, преобразовать
@@ -21,8 +21,8 @@
 				</details>
 				<button onclick="hw1_1()">Проверить</button>
 			</div>
-			<div class="task-block">
-				<details>
+			<div class="task-block open">
+				<details open>
 					<summary>Задание 2</summary>
 					<p class="task-block__about">
 						Необходимо создать переменную name, записать в эту переменную свое имя. Необходимо также создать переменную
@@ -32,6 +32,82 @@
 				<button onclick="hw1_2()">Проверить</button>
 			</div>
 		</details>
+
+		<details class="homework-bock">
+			<summary class="homework-bock__summary">Домашнее задание 2. Основы JavaScript.</summary>
+			<div class="task-block">
+				<details open>
+					<summary>Задание 1</summary>
+					<p class="task-block__about">
+						Создать переменные num1, num2 которые пользователь вводит с клавиатуры Проверьте, что переменная num1 равна
+						или меньше 1, а переменная num2 больше или равна 3.
+					</p>
+				</details>
+				<button onclick="hw2_1()">Проверить</button>
+			</div>
+
+			<div class="task-block">
+				<details open>
+					<summary>Задание 2</summary>
+					<p class="task-block__about">Перепишите код к тернарному оператору</p>
+					<ul class="task-block__about">
+						let test = true;
+					</ul>
+					<ul class="task-block__about">
+						if (test === true) {
+					</ul>
+					<ul class="task-block__about">
+						console.log('+++');
+					</ul>
+					<ul class="task-block__about">
+						} else {
+					</ul>
+					<ul class="task-block__about">
+						console.log('---');
+					</ul>
+					<ul class="task-block__about">
+						}
+					</ul>
+				</details>
+				<button onclick="hw2_2()">Проверить</button>
+			</div>
+
+			<div class="task-block">
+				<details open>
+					<summary>Задание 3</summary>
+					<p class="task-block__about">
+						В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это
+						число (в первую, вторую или третью).
+					</p>
+				</details>
+				<button onclick="hw2_3()">Проверить</button>
+			</div>
+
+			<div class="task-block">
+				<details open>
+					<summary>Задание 4 (доп.)</summary>
+					<p class="task-block__about">
+						Необходимо от пользователя получить число. Необходимо вывести разряды числа, а именно: количество сотен,
+						десятков и единиц.
+					</p>
+					<ul class="task-block__about">
+						Пример: Пользователь ввел число 163. Программа должна вывести: "В числе 163 количество сотен: 1, десятков:
+						6, единиц: 3"
+					</ul>
+					<ul class="task-block__about">
+						Пример 2: Пользователь ввел число 74. Программа должна вывести: "В числе 74 количество сотен: 0, десятков:
+						7, единиц: 4"
+					</ul>
+					<ul class="task-block__about">
+						Пример 3: Пользователь ввел число 9537. Программа должна вывести: "В числе 9537 количество сотен: 5,
+						десятков: 3, единиц: 7"
+					</ul>
+					<p class="task-block__about">Уточнение: пользователь всегда вводит корректное положительное целое число.</p>
+				</details>
+				<button onclick="hw2_4()">Проверить</button>
+			</div>
+		</details>
+
 		<script src="script.js"></script>
 	</body>
 </html>
