@@ -45,8 +45,65 @@ function hw2_4() {
 	console.clear();
 	let userNum = +prompt("Введите положительное целое число: ", "4321");
 	console.log(
-		`В числе ${userNum} количество сотен: ${((userNum / 100) ^ 0) % 10}, десятков: ${
-			((userNum / 10) ^ 0) % 10
-		}, единиц: ${userNum % 10}.`
+		`В числе ${userNum} количество сотен: ${((userNum / 100) ^ 0) % 10}, десятков:
+		${((userNum / 10) ^ 0) % 10}, единиц: ${userNum % 10}.`);
+}
+
+function hw3_1() {
+	console.clear();
+	const numDegree = (degree = 3) => {
+		let num = +prompt("Введите число", 5);
+		return num ** degree;
+	};
+
+	console.log(`${numDegree() + numDegree()}`);
+}
+
+function hw3_2() {
+	console.clear();
+	const salaryWithoutTax = (tax = 13) => {
+		const inputError = "Ошибка ввода!";
+		let salary = prompt("Введите размер Вашей заработной платы: ", 100000);
+		return isNaN(salary) ? inputError : (salary * (100 - tax)) / 100;
+	};
+
+	console.log(`Размер заработной платы за вычетом налогов равен: ${salaryWithoutTax()}`);
+}
+
+function hw3_3() {
+	console.clear();
+	const maxNum = () => {
+		let num1 = +prompt("Введите певрвое число:", 1);
+		let num2 = +prompt("Введите второе число:", 2);
+		let num3 = +prompt("Введите третье число:", 3);
+		if (isNaN(num1 + num2 + num3)) {
+			return "Input Error!";
+		}
+		if (num1 >= num2 && num1 >= num3) {
+			return num1;
+		} else if (num2 >= num3) {
+			return num2;
+		} else {
+			return num3;
+		}
+	};
+
+	console.log(`Максимальное введенное число: ${maxNum()}`);
+}
+
+function hw3_4() {
+	console.clear();
+	let num1 = +prompt("Введите певрвое число:", 5);
+	let num2 = +prompt("Введите второе число:", 7);
+	const sum = (num1, num2) => num1 + num2;
+	const dif = (num1, num2) => (num1 >= num2 ? num1 - num2 : num2 - num1);
+	const mult = (num1, num2) => num1 * num2;
+	const division = (num1, num2) => num1 / num2;
+
+	console.log(
+		`Введены числа: ${num1}, ${num2}. Сумма: ${sum(num1, num2)}, разность: ${dif(num1, num2)}, умножение: ${mult(
+			num1,
+			num2
+		)}, деление: ${division(num1, num2)}.`
 	);
 }
