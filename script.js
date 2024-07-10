@@ -46,7 +46,8 @@ function hw2_4() {
 	let userNum = +prompt("Введите положительное целое число: ", "4321");
 	console.log(
 		`В числе ${userNum} количество сотен: ${((userNum / 100) ^ 0) % 10}, десятков:
-		${((userNum / 10) ^ 0) % 10}, единиц: ${userNum % 10}.`);
+		${((userNum / 10) ^ 0) % 10}, единиц: ${userNum % 10}.`
+	);
 }
 
 function hw3_1() {
