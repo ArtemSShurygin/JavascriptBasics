@@ -163,7 +163,7 @@
 			</div>
 		</details>
 
-		<details class="homework-bock" open>
+		<details class="homework-bock">
 			<summary class="homework-bock__summary">Домашнее задание 4. Семинар. Циклы и массивы.</summary>
 			<div class="task-block">
 				<details open>
@@ -219,6 +219,142 @@
 				</details>
 				<button id="hw4_4">Проверить</button>
 			</div>
+
+		</details>
+
+		<details class="homework-bock" open>
+			<summary class="homework-bock__summary">Домашнее задание 5. Объекты в JavaScript.</summary>
+			<div class="task-block">
+				<details open>
+					<summary>Задание 1</summary>
+					<p class="task-block__about">
+						Дан объект numbers. Необходимо в консоль вывести все значения больше или равные 3.
+						<ul class="task-block__about">const numbers = {</ul>
+						<ul class="task-block__about">keyin1: 1,</ul>
+						<ul class="task-block__about">keyin2: 2,</ul>
+						<ul class="task-block__about">keyin3: 3,</ul>
+						<ul class="task-block__about">keyin4: 4,</ul>
+						<ul class="task-block__about">keyin5: 5,</ul>
+						<ul class="task-block__about">keyin6: 6,</ul>
+						<ul class="task-block__about">keyin7: 7,</ul>
+						<ul class="task-block__about">}</ul>
+					</p>
+				</details>
+				<button id="hw5_1">Проверить</button>
+			</div>
+
+			<div class="task-block">
+				<details open>
+					<summary>Задание 2</summary>
+					<p class="task-block__about">
+						Необходимо из объекта, который лежит в константе post вывести значения, к которым приписан комментарий, в консоль.
+						<ul class="task-block__about">const post = {</ul>
+						<ul class="task-block__about">author: "John", // вывести этот текст</ul>
+						<ul class="task-block__about">postId: 23,</ul>
+						<ul class="task-block__about">comments: [</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">userId: 10,</ul>
+						<ul class="task-block__about">userName: "Alex",</ul>
+						<ul class="task-block__about">text: "lorem ipsum",</ul>
+						<ul class="task-block__about">rating: {</ul>
+						<ul class="task-block__about">likes: 10,</ul>
+						<ul class="task-block__about">dislikes: 2, // вывести это число</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">userId: 5, // вывести это число</ul>
+						<ul class="task-block__about">userName: "Jane",</ul>
+						<ul class="task-block__about">text: "lorem ipsum 2", // вывести этот текст</ul>
+						<ul class="task-block__about">rating: {</ul>
+						<ul class="task-block__about">likes: 3,</ul>
+						<ul class="task-block__about">dislikes: 1,</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">],</ul>
+						<ul class="task-block__about">};</ul>
+					</p>
+				</details>
+				<button id="hw5_2">Проверить</button>
+			</div>
+
+			<div class="task-block">
+				<details open>
+					<summary>Задание 3</summary>
+					<p class="task-block__about">
+						Дан массив products, необходимо цену каждого продукта уменьшить на 15% используя метод forEach.
+						<ul class="task-block__about">const products = [</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">id: 3,</ul>
+						<ul class="task-block__about">price: 200,</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">id: 4,</ul>
+						<ul class="task-block__about">price: 900,</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">id: 1,</ul>
+						<ul class="task-block__about">price: 1000,</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">];</ul>
+					</p>
+				</details>
+				<button id="hw5_3">Проверить</button>
+			</div>
+
+			<div class="task-block">
+				<details open>
+					<summary>Задание 4</summary>
+					<p class="task-block__about">
+						<ul class="task-block__about">1. Необходимо вывести в консоль массив продуктов в котором есть хоть одна фотография используя метод filter. Исходные данные - массив products.</ul>
+						<ul class="task-block__about">2. Необходимо отсортировать массив products используя метод sort по цене, начиная с самой маленькой, заканчивая самой большой ценой, после чего вывести отсортированный массив в консоль.</ul>
+						<ul class="task-block__about">```</ul>
+						<ul class="task-block__about">const products = [</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">id: 3,</ul>
+						<ul class="task-block__about">price: 127,</ul>
+						<ul class="task-block__about">photos: [</ul>
+						<ul class="task-block__about">"1.jpg",</ul>
+						<ul class="task-block__about">"2.jpg",</ul>
+						<ul class="task-block__about">],</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">id: 5,</ul>
+						<ul class="task-block__about">price: 499,</ul>
+						<ul class="task-block__about">photos: [],</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">id: 10,</ul>
+						<ul class="task-block__about">price: 26,</ul>
+						<ul class="task-block__about">photos: [</ul>
+						<ul class="task-block__about">"3.jpg",</ul>
+						<ul class="task-block__about">],</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">{</ul>
+						<ul class="task-block__about">id: 8,</ul>
+						<ul class="task-block__about">price: 78,</ul>
+						<ul class="task-block__about">},</ul>
+						<ul class="task-block__about">];</ul>
+						<ul class="task-block__about">[]()</ul>
+						<ul class="task-block__about">[]()</ul>
+					</p>
+				</details>
+				<button id="hw5_4">Проверить</button>
+			</div>
+
+			<div class="task-block">
+				<details open>
+					<summary>Задание 5</summary>
+					<p class="task-block__about">
+						Дано 2 массива
+						<ul class="task-block__about">const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];</ul>
+						<ul class="task-block__about">const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];</ul>
+						<ul class="task-block__about">```</ul>
+						Вам необходимо объединить 2 этих массива, чтобы значения первого массива были ключами, а значения второго массива — значениями.
+					</p>
+				</details>
+				<button id="hw5_5">Проверить</button>
+			</div>
+
 
 		</details>
 		<script src="script.js" ></script>
